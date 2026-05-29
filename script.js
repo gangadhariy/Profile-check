@@ -45,7 +45,7 @@
   }
 
   function initP() {
-    const n = Math.min(Math.floor(W * H / 5000), 220);
+    const n = Math.min(Math.floor(W * H / 2000), 400);
     particles = Array.from({ length: n }, () => new Particle());
   }
   initP();
