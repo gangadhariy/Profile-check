@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gangadhar I Yaleholi — DevOps Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">GIY</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#music">Music</a></li>
+    <li><a href="#contact" class="nav-cta">Connect</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-drawer" id="drawer">
+  <ul>
+    <li><a href="#about" class="d-link">About</a></li>
+    <li><a href="#skills" class="d-link">Skills</a></li>
+    <li><a href="#experience" class="d-link">Experience</a></li>
+    <li><a href="#projects" class="d-link">Projects</a></li>
+    <li><a href="#music" class="d-link">Music</a></li>
+    <li><a href="#contact" class="d-link">Connect</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-noise"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-chip">
+        <span class="chip-dot"></span>
+        Open to Opportunities
+      </div>
+      <h1 class="hero-name">
+        <span class="hn-first">Gangadhar</span>
+        <span class="hn-last">I Yaleholi</span>
+      </h1>
+      <div class="hero-title-row">
+        <span class="title-bar"></span>
+        <span class="title-text" id="typewriter"></span><span class="tcursor">|</span>
+      </div>
+      <p class="hero-bio">
+        DevOps Engineer with 3 years of hands-on experience in Kubernetes, CI/CD automation, GitOps workflows, and cloud infrastructure management. Skilled in AWS, Docker, Terraform, Jenkins, Argo CD, OpenShift, and GitHub Actions.
+      </p>
+      <div class="hero-btns">
+        <a href="#experience" class="btn-main">View Experience <span>→</span></a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span class="meta-val" data-count="3">0</span><span class="meta-sym">+</span>
+          <span class="meta-lbl">Years Exp.</span>
+        </div>
+        <div class="meta-sep"></div>
+        <div class="meta-item">
+          <span class="meta-val" data-count="40">0</span><span class="meta-sym">%</span>
+          <span class="meta-lbl">Deploy Efficiency ↑</span>
+        </div>
+        <div class="meta-sep"></div>
+        <div class="meta-item">
+          <span class="meta-val" data-count="2">0</span><span class="meta-sym"></span>
+          <span class="meta-lbl">Certifications</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="orbit-wrap">
+        <div class="o-ring r1"><div class="o-dot"></div></div>
+        <div class="o-ring r2"><div class="o-dot"></div></div>
+        <div class="o-ring r3"><div class="o-dot"></div></div>
+        <div class="hero-card">
+          <div class="hc-top">
+            <div class="hc-avatar">GIY</div>
+            <div class="hc-status"><span></span>Available</div>
+          </div>
+          <div class="hc-name">Gangadhar I Yaleholi</div>
+          <div class="hc-role">DevOps Engineer</div>
+          <div class="hc-loc">📍 Bengaluru, India</div>
+          <div class="hc-tags">
+            <span>AWS</span><span>K8s</span><span>GitOps</span><span>Terraform</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-hint">
+    <span>Scroll down</span>
+    <div class="sh-arrow"></div>
+  </a>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="sec-label">01 — About</div>
+    <h2 class="sec-title">Professional Summary</h2>
+    <div class="about-layout">
+      <div class="about-text reveal">
+        <p>DevOps Engineer with 3 years of hands-on experience in Kubernetes, CI/CD automation, GitOps workflows, and cloud infrastructure management. Skilled in AWS, Docker, Terraform, Jenkins, Argo CD, OpenShift, and GitHub Actions with practical experience in infrastructure automation, Kubernetes administration, and scalable cloud-native deployments.</p>
+        <div class="about-details">
+          <div class="ad-item"><span class="ad-key">📧 Email</span><span>gangadharyaleholi12@gmail.com</span></div>
+          <div class="ad-item"><span class="ad-key">📱 Phone</span><span>+91 6362307946</span></div>
+          <div class="ad-item"><span class="ad-key">📍 Location</span><span>Bengaluru, India</span></div>
+          <div class="ad-item"><span class="ad-key">🎓 Education</span><span>B.Tech/B.E. — Rural Engineering College, Hulkoti (2023)</span></div>
+          <div class="ad-item"><span class="ad-key">🌐 Languages</span><span>English, Kannada, Telugu</span></div>
+        </div>
+        <div class="cert-row">
+          <div class="cert-badge">🏆 AWS Solutions Architect Associate</div>
+          <div class="cert-badge">🏆 DevOps Engineer</div>
+        </div>
+      </div>
+      <div class="about-socials reveal">
+        <a href="https://github.com/gangadhariy" target="_blank" class="social-card">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          <div><strong>GitHub</strong><span>@gangadhariy</span></div>
+          <span class="sc-arrow">↗</span>
+        </a>
+        <a href="https://www.linkedin.com/in/gangadhar-i-yaleholi-044066245/" target="_blank" class="social-card">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <div><strong>LinkedIn</strong><span>Connect Professionally</span></div>
+          <span class="sc-arrow">↗</span>
+        </a>
+        <a href="https://youtube.com/@jatayuempire" target="_blank" class="social-card">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <div><strong>YouTube</strong><span>@jatayuempire</span></div>
+          <span class="sc-arrow">↗</span>
+        </a>
+        <a href="https://open.spotify.com/artist/0Qsk9DvcvyFjvXnIAM5vdE" target="_blank" class="social-card">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+          <div><strong>Spotify</strong><span>Gangadhar I Eleholi</span></div>
+          <span class="sc-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section section-tinted" id="skills">
+  <div class="wrap">
+    <div class="sec-label">02 — Skills</div>
+    <h2 class="sec-title">Technical Skills</h2>
+    <div class="skills-table reveal">
+
+      <div class="sk-row">
+        <div class="sk-category">Cloud Platforms</div>
+        <div class="sk-items">
+          <span class="sk-tag main">AWS EC2</span>
+          <span class="sk-tag main">IAM</span>
+          <span class="sk-tag main">VPC</span>
+          <span class="sk-tag main">S3</span>
+          <span class="sk-tag main">EKS</span>
+          <span class="sk-tag main">CloudWatch</span>
+          <span class="sk-tag main">Load Balancer</span>
+          <span class="sk-tag main">Autoscaling</span>
+          <span class="sk-tag main">RDS</span>
+          <span class="sk-tag main">Lambda</span>
+          <span class="sk-tag main">SNS</span>
+          <span class="sk-tag main">Route53</span>
+        </div>
+      </div>
+
+      <div class="sk-row">
+        <div class="sk-category">Containers & Orchestration</div>
+        <div class="sk-items">
+          <span class="sk-tag">Docker</span>
+          <span class="sk-tag">Docker Compose</span>
+          <span class="sk-tag">Kubernetes</span>
+          <span class="sk-tag">OpenShift</span>
+          <span class="sk-tag">Cluster API (CAPI)</span>
+        </div>
+      </div>
+
+      <div class="sk-row">
+        <div class="sk-category">CI/CD & GitOps</div>
+        <div class="sk-items">
+          <span class="sk-tag">Jenkins</span>
+          <span class="sk-tag">GitHub Actions</span>
+          <span class="sk-tag">Argo CD</span>
+        </div>
+      </div>
+
+      <div class="sk-row">
+        <div class="sk-category">Infrastructure & Automation</div>
+        <div class="sk-items">
+          <span class="sk-tag">Terraform</span>
+          <span class="sk-tag">Ansible</span>
+        </div>
+      </div>
+
+      <div class="sk-row">
+        <div class="sk-category">Monitoring & Security</div>
+        <div class="sk-items">
+          <span class="sk-tag">CloudWatch</span>
+          <span class="sk-tag">Trivy</span>
+          <span class="sk-tag">SonarQube</span>
+        </div>
+      </div>
+
+      <div class="sk-row">
+        <div class="sk-category">Version Control</div>
+        <div class="sk-items">
+          <span class="sk-tag">Git</span>
+          <span class="sk-tag">GitHub</span>
+        </div>
+      </div>
+
+      <div class="sk-row">
+        <div class="sk-category">Scripting</div>
+        <div class="sk-items">
+          <span class="sk-tag">Shell Scripting</span>
+          <span class="sk-tag">Python (Basics)</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="sec-label">03 — Experience</div>
+    <h2 class="sec-title">Professional Experience</h2>
+
+    <div class="timeline">
+
+      <!-- JOB 1 -->
+      <div class="tl-item reveal">
+        <div class="tl-left">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div class="tl-title-block">
+              <h3>DevOps Engineer</h3>
+              <span class="tl-company">SAN Data Systems</span>
+            </div>
+            <div class="tl-meta">
+              <span class="tl-period">Jun 2023 – Present</span>
+              <span class="tl-type fulltime">Full-Time</span>
+            </div>
+          </div>
+          <ul class="tl-points">
+            <li>Designed and maintained CI/CD pipelines using Jenkins and GitHub Actions, reducing deployment time by approximately 40% and improving release consistency across environments.</li>
+            <li>Implemented GitOps-based deployments using Argo CD on Amazon EKS, automating deployment workflows, reducing manual operational effort, and enabling faster rollback and reliable recovery during production issues.</li>
+            <li>Managed Kubernetes cluster lifecycle operations using Cluster API (CAPI) across multi-cloud environments, improving cluster provisioning efficiency and reducing manual configuration overhead.</li>
+            <li>Automated infrastructure provisioning using Terraform and Ansible, reducing environment setup time from hours to minutes and improving infrastructure consistency.</li>
+            <li>Improved Kubernetes cluster stability and resource utilization by implementing ResourceQuotas, LimitRanges, and PodDisruptionBudgets, optimizing namespace-level resource allocation and ensuring controlled workload availability during maintenance and scaling operations.</li>
+            <li>Integrated Trivy and SonarQube into CI/CD pipelines, improving security scanning and strengthening code quality validation before deployments.</li>
+            <li>Optimized non-production AWS infrastructure costs by automating scheduled resource management, improving resource utilization and reducing unnecessary cloud resource consumption during idle periods.</li>
+          </ul>
+          <div class="tl-tags">
+            <span>Jenkins</span><span>GitHub Actions</span><span>Argo CD</span>
+            <span>AWS EKS</span><span>Terraform</span><span>Ansible</span>
+            <span>Kubernetes</span><span>CAPI</span><span>Trivy</span><span>SonarQube</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- JOB 2 -->
+      <div class="tl-item reveal">
+        <div class="tl-left">
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div class="tl-title-block">
+              <h3>AWS Solution Architect & DevOps Intern</h3>
+              <span class="tl-company">Intelipath Software Solutions</span>
+            </div>
+            <div class="tl-meta">
+              <span class="tl-period">Prior to Jun 2023</span>
+              <span class="tl-type intern">Internship</span>
+            </div>
+          </div>
+          <ul class="tl-points">
+            <li>Designed and deployed secure AWS infrastructure using EC2, VPC, IAM, S3, and Load Balancers for scalable application hosting.</li>
+            <li>Automated cloud resource provisioning using Terraform, improving infrastructure consistency and deployment efficiency.</li>
+            <li>Configured Amazon CloudWatch monitoring and alerts to improve infrastructure visibility and troubleshooting efficiency.</li>
+            <li>Supported deployment and troubleshooting activities for cloud-native applications and infrastructure environments.</li>
+          </ul>
+          <div class="tl-tags">
+            <span>AWS EC2</span><span>VPC</span><span>IAM</span><span>Terraform</span><span>CloudWatch</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section section-tinted" id="projects">
+  <div class="wrap">
+    <div class="sec-label">04 — Projects</div>
+    <h2 class="sec-title">Key Projects</h2>
+    <div class="projects-grid">
+
+      <div class="proj-card reveal">
+        <div class="proj-num">01</div>
+        <h3>Jenkins CI/CD Automation & GitOps Platform</h3>
+        <ul>
+          <li>Built automated CI/CD pipelines using Jenkins, GitHub Actions, Docker, and Kubernetes for streamlined application deployment.</li>
+          <li>Implemented GitOps-based deployments using Argo CD on Amazon EKS to improve deployment traceability and rollback management.</li>
+          <li>Integrated Trivy and SonarQube for automated vulnerability scanning and code quality checks.</li>
+        </ul>
+        <div class="proj-stack">
+          <span>Jenkins</span><span>GitHub Actions</span><span>Argo CD</span><span>Kubernetes</span><span>Trivy</span><span>SonarQube</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-num">02</div>
+        <h3>Kubernetes Multi-Cloud Management Platform</h3>
+        <ul>
+          <li>Managed Kubernetes clusters across Amazon Web Services, Microsoft Azure, Google Cloud, and VMware using Cluster API (CAPI).</li>
+          <li>Improved cluster reliability through centralized lifecycle management and Kubernetes resource optimization.</li>
+          <li>Performed troubleshooting and operational management for containerized workloads.</li>
+        </ul>
+        <div class="proj-stack">
+          <span>CAPI</span><span>AWS</span><span>Azure</span><span>GCP</span><span>VMware</span><span>Kubernetes</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-num">03</div>
+        <h3>3-Tier Application Deployment on OpenShift</h3>
+        <ul>
+          <li>Deployed a secure 3-tier application architecture with frontend, backend, and PostgreSQL services on Red Hat OpenShift.</li>
+          <li>Configured scaling, route exposure, and Kubernetes resource management for improved application availability.</li>
+        </ul>
+        <div class="proj-stack">
+          <span>OpenShift</span><span>PostgreSQL</span><span>Kubernetes</span><span>Docker</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MUSIC -->
+<section class="section" id="music">
+  <div class="wrap">
+    <div class="sec-label">05 — Music</div>
+    <h2 class="sec-title">Sound Architecture</h2>
+    <div class="music-layout reveal">
+      <div class="music-info">
+        <div class="music-artist">
+          <span class="ma-label">Artist Name</span>
+          <h3>Gangadhar I Eleholi</h3>
+        </div>
+        <p>I compose and produce cinematic, electronic, and experimental music using Ableton Live — applying the same systematic and architectural thinking from infrastructure engineering to sonic design.</p>
+        <p class="music-tip">Search <strong>"Gangadhar I Eleholi"</strong> on Spotify, Google, or any music platform.</p>
+        <div class="music-genre">
+          <span>🎬 Cinematic</span>
+          <span>🎛️ Electronic</span>
+          <span>🌊 Experimental</span>
+          <span>🎹 Ableton Live</span>
+        </div>
+        <div class="music-btns">
+          <a href="https://open.spotify.com/artist/0Qsk9DvcvyFjvXnIAM5vdE" target="_blank" class="mbtn spotify">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+            Listen on Spotify
+          </a>
+          <a href="https://youtube.com/@jatayuempire" target="_blank" class="mbtn youtube">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            Watch on YouTube
+          </a>
+        </div>
+      </div>
+      <div class="music-visual">
+        <div class="vinyl-wrap">
+          <div class="vinyl">
+            <div class="vinyl-grooves"></div>
+            <div class="vinyl-label">GIE</div>
+          </div>
+        </div>
+        <div class="eq-wrap">
+          <div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div>
+          <div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div>
+          <div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div>
+          <div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div>
+          <div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-tinted" id="contact">
+  <div class="wrap">
+    <div class="sec-label">06 — Contact</div>
+    <h2 class="sec-title">Let's Connect</h2>
+    <div class="contact-layout reveal">
+      <p class="contact-desc">Open to DevOps engineering roles, cloud consulting, and music collaborations. Reach out through any of these channels.</p>
+      <div class="contact-grid">
+        <a href="mailto:gangadharyaleholi12@gmail.com" class="ccard">
+          <div class="ccard-icon">✉️</div>
+          <div><strong>Email</strong><span>gangadharyaleholi12@gmail.com</span></div>
+          <span class="ccard-arr">→</span>
+        </a>
+        <a href="tel:+916362307946" class="ccard">
+          <div class="ccard-icon">📱</div>
+          <div><strong>Phone</strong><span>+91 6362307946</span></div>
+          <span class="ccard-arr">→</span>
+        </a>
+        <a href="https://github.com/gangadhariy" target="_blank" class="ccard">
+          <div class="ccard-icon">💻</div>
+          <div><strong>GitHub</strong><span>@gangadhariy</span></div>
+          <span class="ccard-arr">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/gangadhar-i-yaleholi-044066245/" target="_blank" class="ccard">
+          <div class="ccard-icon">🔗</div>
+          <div><strong>LinkedIn</strong><span>Connect Professionally</span></div>
+          <span class="ccard-arr">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-row">
+      <span class="footer-logo">GIY</span>
+      <span>© 2026 Gangadhar I Yaleholi</span>
+      <span class="footer-sub">DevOps Engineer & Music Composer · Bengaluru, India</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
