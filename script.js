@@ -22,13 +22,12 @@
   class Particle {
     constructor() { this.reset(); }
     reset() {
-      this.x = Math.random() * W;
-      this.y = Math.random() * H;
-      this.r = Math.random() * 1.5 + 0.5;
-      this.vx = (Math.random() - 0.5) * 0.7;
-      this.vy = (Math.random() - 0.5) * 0.7;
-      this.a = Math.random() * 0.3 + 0.4;
-      // Alternate between indigo and orange tints
+      this.r = Math.random() * 0.8 + 0.3;
+      this.vx = (Math.random() - 0.5) * 0.4;
+      this.vy = (Math.random() - 0.5) * 0.4;
+      this.a = 0.25;
+      this.aActive = 0.75;
+      this.connected = false;
       this.color = Math.random() > 0.6 ? '180,60,0' : '50,20,160';
     }
      
