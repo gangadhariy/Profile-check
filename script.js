@@ -24,10 +24,10 @@
     reset() {
       this.x = Math.random() * W;
       this.y = Math.random() * H;
-      this.r = Math.random() * 3 + 1.5;
+      this.r = Math.random() * 1.5 + 0.5;
       this.vx = (Math.random() - 0.5) * 0.7;
       this.vy = (Math.random() - 0.5) * 0.7;
-      this.a = Math.random() * 0.4 + 0.6;
+      this.a = Math.random() * 0.3 + 0.4;
       // Alternate between indigo and orange tints
       this.color = Math.random() > 0.6 ? '180,60,0' : '50,20,160';
     }
